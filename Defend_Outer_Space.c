@@ -1,12 +1,3 @@
-/* To do list:
--2d Array containing enemies, player, and lasers.
--Player can only move left and right via letters A and D.
--Player will shoot via 'm'.
--Print Start screen and explain rules.
--When all enemies die, print score and win screen.
--When player dies print game over and score screen.
-*/
-
 //Toolboxes Required
 #include <fcntl.h>
 #include <stdio.h>
@@ -16,7 +7,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 
-//Forward Declaration of functions
+//Prototype of functions
 int Game();
 void enableRaw();
 void disableRaw();
@@ -24,7 +15,7 @@ void print();
 void enemylasers();
 void playerlaser();
 
-//Declaration of Global Variables
+//Global Variables
 struct termios orig_termios;
 int i=0, j=0, Xaxis=47, Yaxis=47, totalenemies=472, score=0, life=3;
 int playerX=23, playerY=44, laserX, laserY, difficulty;
